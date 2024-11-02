@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { BankingService } from '../../services/banking.service';
 import { MatSnackBar } from '@angular/material/snack-bar';
@@ -22,7 +22,7 @@ export class SendComponent implements OnInit {
   sendMoneyForm: FormGroup;
   isTransactionInProgress = false;
   currentUserEmail: string | null = null;
-
+  @Output() transactionComplete = new EventEmitter<void>();
   constructor(
     private fb: FormBuilder,
     private snackBar: MatSnackBar,
@@ -82,7 +82,10 @@ export class SendComponent implements OnInit {
       .subscribe({
         next: () => {
           this.showSuccess();
+          this.transactionComplete.emit();
           this.sendMoneyForm.reset();
+          this.sendMoneyForm.markAsPristine();
+          this.sendMoneyForm.markAsUntouched();
         },
         error: (error) => this.handleError(error)
       });

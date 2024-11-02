@@ -56,12 +56,11 @@ export class BankingService {
     if (!fromEmail || !toEmail || amount <= 0) {
       return throwError(() => new Error('Invalid transfer parameters'));
     }
-
+  
     if (fromEmail === toEmail) {
       return throwError(() => new Error('Cannot transfer money to the same account'));
     }
-
-    // First get both users
+  
     return forkJoin([
       this.getCurrentUser(fromEmail),
       this.getCurrentUser(toEmail)
@@ -70,12 +69,12 @@ export class BankingService {
         if (!sender || !recipient) {
           throw new Error('One or both users not found');
         }
-
+  
         if (sender.balance < amount) {
           throw new Error('Insufficient balance');
         }
-
-        //create debit transaction 
+  
+        // Create two transactions - one for sender (debit) and one for receiver (credit)
         const debitTransaction = {
           type: 'debit' as const,
           email: fromEmail,
@@ -83,7 +82,7 @@ export class BankingService {
           description: `Transfer to ${toEmail}: ${description}`,
           date: new Date().toISOString()
         };
-        // create credit transaction
+  
         const creditTransaction = {
           type: 'credit' as const,
           email: toEmail,
@@ -91,21 +90,37 @@ export class BankingService {
           description: `Received from ${fromEmail}: ${description}`,
           date: new Date().toISOString()
         };
-
-        // Update both users with new balances
+  
+        // Update balances and create transactions
         return forkJoin([
-          // Update sender
+          // Update sender's balance
           this.http.patch<User>(`${this.apiUrl}/users/${sender.id}`, {
             balance: sender.balance - amount
           }),
-          // Update recipient
+          // Update recipient's balance
           this.http.patch<User>(`${this.apiUrl}/users/${recipient.id}`, {
             balance: recipient.balance + amount
           }),
-          // Add both transactions
-          this.addTransaction(debitTransaction),
-          this.addTransaction(creditTransaction)
-        ]);
+          // Get current transactions to determine new IDs
+          this.http.get<{ recentTransactions: Transaction[] }>(`${this.apiUrl}/transactions`)
+        ]).pipe(
+          switchMap(([_, __, transactionsResponse]) => {
+            const transactions = transactionsResponse.recentTransactions || [];
+            const maxId = Math.max(...transactions.map(t => t.id), 0);
+            
+            // Add both transactions with sequential IDs
+            const updatedTransactions = {
+              recentTransactions: [
+                { ...debitTransaction, id: maxId + 1 },
+                { ...creditTransaction, id: maxId + 2 },
+                ...transactions
+              ]
+            };
+  
+            // Update transactions in the database
+            return this.http.put(`${this.apiUrl}/transactions`, updatedTransactions);
+          })
+        );
       }),
       map(() => undefined),
       catchError(error => {
@@ -114,6 +129,7 @@ export class BankingService {
       })
     );
   }
+  
 
   updateBalance(email: string, amount: number, type: 'credit' | 'debit'): Observable<void> {
     if (!email || amount <= 0) {

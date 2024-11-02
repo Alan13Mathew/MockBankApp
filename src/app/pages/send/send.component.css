@@ -4,8 +4,9 @@
   margin: 2rem auto;
   padding: 0 1rem;
 }
+
 mat-form-field {
-  margin-bottom: 1rem;
+  margin: 10px;
 }
 .animate-spin {
   animation: spin 1s linear infinite;

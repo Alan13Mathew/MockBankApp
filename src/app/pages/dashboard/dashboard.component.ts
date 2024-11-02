@@ -65,55 +65,6 @@ export class DashboardComponent implements OnInit {
     }
   }
 
-  // private loadDashboardData() {
-  //   if (!this.currentUser?.email) return;
-
-  //   // this.isLoading = true;
-  //   this.loadingService.show('dashboardData');
-
-  //   // Load dashboard summary data
-  //   this.bankingService.getDashboardData(this.currentUser.email)
-  //     .pipe(
-  //       catchError(error => {
-  //         console.error('Error loading dashboard data:', error);
-  //         return of({
-  //           totalBalance: 0,
-  //           monthlyIncome: 0,
-  //           monthlyExpenses: 0
-  //         });
-  //       }),
-  //       finalize(() => this.isLoading = false)
-  //     )
-  //     .subscribe(data => {
-  //       this.totalBalance = data.totalBalance;
-  //       this.monthlyIncome = data.monthlyIncome;
-  //       this.monthlyExpenses = data.monthlyExpenses;
-  //     });
-
-  //   // Load recent transactions
-  //   this.bankingService.getRecentTransactions(this.currentUser.email)
-  //     .pipe(
-  //       catchError(error => {
-  //         console.error('Error loading transactions:', error);
-  //         return of([]);
-  //       })
-  //     )
-  //     .subscribe(transactions => {
-  //       this.recentTransactions = transactions;
-  //     });
-
-  //   // Load balance history
-  //   this.bankingService.getBalanceHistory()
-  //     .pipe(
-  //       catchError(error => {
-  //         console.error('Error loading balance history:', error);
-  //         return of([]);
-  //       })
-  //     )
-  //     .subscribe(history => {
-  //       this.balanceHistory = history;
-  //     });
-  // }
   private loadDashboardData() {
     if (!this.currentUser?.email){
       this.loadingService.clearAll();
@@ -202,4 +153,8 @@ export class DashboardComponent implements OnInit {
     const logoutKey = 'logout-' + Date.now();
     this.loadingService.show(logoutKey);
     this.authService.logout(logoutKey);  }
+
+    refreshDashboard() {
+      this.loadDashboardData();
+    }
 }
