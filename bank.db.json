@@ -1,0 +1,1046 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "Alice",
+      "balance": 1000,
+      "email": "alice@gmail.com",
+      "password": "alice@123"
+    },
+    {
+      "id": "2",
+      "name": "Bob",
+      "balance": 2000,
+      "email": "bob@gmail.com",
+      "password": "bob@123"
+    },
+    {
+      "id": "3",
+      "name": "Amal",
+      "balance": 1700,
+      "email": "amal@gmail.com",
+      "password": "amal@123"
+    },
+    {
+      "id": "4",
+      "name": "Alan",
+      "balance": 1500,
+      "email": "alan@gmail.com",
+      "password": "alan@123"
+    }
+  ],
+  "transactions": {
+    "item": {
+      "item": {
+        "item": {
+          "item": {
+            "item": {
+              "item": {
+                "item": {
+                  "item": {
+                    "recentTransactions": [
+                      {
+                        "id": 1,
+                        "type": "credit",
+                        "email": "amal@gmail.com",
+                        "amount": 2500,
+                        "description": "Salary Deposit",
+                        "date": "2024-03-15"
+                      },
+                      {
+                        "id": 2,
+                        "type": "debit",
+                        "email": "alice@gmail.com",
+                        "amount": 150,
+                        "description": "Grocery Store",
+                        "date": "2024-03-14"
+                      },
+                      {
+                        "id": 3,
+                        "type": "debit",
+                        "email": "alan@gmail.com",
+                        "amount": 235,
+                        "description": "Netflix Subscription",
+                        "date": "2024-03-13"
+                      },
+                      {
+                        "id": 4,
+                        "type": "debit",
+                        "email": "bob@gmail.com",
+                        "amount": 85,
+                        "description": "Electric Bill",
+                        "date": "2024-03-12"
+                      },
+                      {
+                        "id": 5,
+                        "type": "debit",
+                        "email": "alan@gmail.com",
+                        "amount": 455,
+                        "description": "Wifi Bill",
+                        "date": "2024-03-13"
+                      },
+                      {
+                        "id": 6,
+                        "type": "debit",
+                        "email": "alice@gmail.com",
+                        "amount": 65,
+                        "description": "Grocery",
+                        "date": "2024-03-13"
+                      },
+                      {
+                        "id": 7,
+                        "type": "debit",
+                        "email": "amal@gmail.com",
+                        "amount": 235,
+                        "description": "Netflix Subscription",
+                        "date": "2024-03-13"
+                      },
+                      {
+                        "id": 8,
+                        "type": "debit",
+                        "email": "bob@gmail.com",
+                        "amount": 235,
+                        "description": "Netflix Subscription",
+                        "date": "2024-03-13"
+                      },
+                      {
+                        "id": 9,
+                        "type": "debit",
+                        "email": "bob@gmail.com",
+                        "amount": 20,
+                        "description": "Grocery",
+                        "date": "2024-03-13"
+                      },
+                      {
+                        "id": 10,
+                        "type": "credit",
+                        "email": "bob@gmail.com",
+                        "amount": 200,
+                        "description": "Cashback",
+                        "date": "2024-03-15"
+                      },
+                      {
+                        "id": 11,
+                        "type": "credit",
+                        "email": "bob@gmail.com",
+                        "amount": 500,
+                        "description": "Reward Point",
+                        "date": "2024-03-15"
+                      }
+                    ],
+                    "balanceHistory": [
+                      {
+                        "month": "Jun",
+                        "amount": 5000
+                      },
+                      {
+                        "month": "Jul",
+                        "amount": 6200
+                      },
+                      {
+                        "month": "Aug",
+                        "amount": 5800
+                      },
+                      {
+                        "month": "Sep",
+                        "amount": 7500
+                      },
+                      {
+                        "month": "Oct",
+                        "amount": 8200
+                      },
+                      {
+                        "month": "Nov",
+                        "amount": 7500
+                      }
+                    ]
+                  },
+                  "recentTransactions": [
+                    {
+                      "type": "debit",
+                      "email": "bob@gmail.com",
+                      "amount": 2000,
+                      "description": "Transfer to alice@gmail.com: Money Transfer",
+                      "date": "2024-11-02T13:35:28.219Z",
+                      "id": 12
+                    },
+                    {
+                      "id": 1,
+                      "type": "credit",
+                      "email": "amal@gmail.com",
+                      "amount": 2500,
+                      "description": "Salary Deposit",
+                      "date": "2024-03-15"
+                    },
+                    {
+                      "id": 2,
+                      "type": "debit",
+                      "email": "alice@gmail.com",
+                      "amount": 150,
+                      "description": "Grocery Store",
+                      "date": "2024-03-14"
+                    },
+                    {
+                      "id": 3,
+                      "type": "debit",
+                      "email": "alan@gmail.com",
+                      "amount": 235,
+                      "description": "Netflix Subscription",
+                      "date": "2024-03-13"
+                    },
+                    {
+                      "id": 4,
+                      "type": "debit",
+                      "email": "bob@gmail.com",
+                      "amount": 85,
+                      "description": "Electric Bill",
+                      "date": "2024-03-12"
+                    },
+                    {
+                      "id": 5,
+                      "type": "debit",
+                      "email": "alan@gmail.com",
+                      "amount": 455,
+                      "description": "Wifi Bill",
+                      "date": "2024-03-13"
+                    },
+                    {
+                      "id": 6,
+                      "type": "debit",
+                      "email": "alice@gmail.com",
+                      "amount": 65,
+                      "description": "Grocery",
+                      "date": "2024-03-13"
+                    },
+                    {
+                      "id": 7,
+                      "type": "debit",
+                      "email": "amal@gmail.com",
+                      "amount": 235,
+                      "description": "Netflix Subscription",
+                      "date": "2024-03-13"
+                    },
+                    {
+                      "id": 8,
+                      "type": "debit",
+                      "email": "bob@gmail.com",
+                      "amount": 235,
+                      "description": "Netflix Subscription",
+                      "date": "2024-03-13"
+                    },
+                    {
+                      "id": 9,
+                      "type": "debit",
+                      "email": "bob@gmail.com",
+                      "amount": 20,
+                      "description": "Grocery",
+                      "date": "2024-03-13"
+                    },
+                    {
+                      "id": 10,
+                      "type": "credit",
+                      "email": "bob@gmail.com",
+                      "amount": 200,
+                      "description": "Cashback",
+                      "date": "2024-03-15"
+                    },
+                    {
+                      "id": 11,
+                      "type": "credit",
+                      "email": "bob@gmail.com",
+                      "amount": 500,
+                      "description": "Reward Point",
+                      "date": "2024-03-15"
+                    }
+                  ]
+                },
+                "recentTransactions": [
+                  {
+                    "type": "credit",
+                    "email": "alice@gmail.com",
+                    "amount": 2000,
+                    "description": "Received from bob@gmail.com: Money Transfer",
+                    "date": "2024-11-02T13:35:28.219Z",
+                    "id": 12
+                  },
+                  {
+                    "id": 1,
+                    "type": "credit",
+                    "email": "amal@gmail.com",
+                    "amount": 2500,
+                    "description": "Salary Deposit",
+                    "date": "2024-03-15"
+                  },
+                  {
+                    "id": 2,
+                    "type": "debit",
+                    "email": "alice@gmail.com",
+                    "amount": 150,
+                    "description": "Grocery Store",
+                    "date": "2024-03-14"
+                  },
+                  {
+                    "id": 3,
+                    "type": "debit",
+                    "email": "alan@gmail.com",
+                    "amount": 235,
+                    "description": "Netflix Subscription",
+                    "date": "2024-03-13"
+                  },
+                  {
+                    "id": 4,
+                    "type": "debit",
+                    "email": "bob@gmail.com",
+                    "amount": 85,
+                    "description": "Electric Bill",
+                    "date": "2024-03-12"
+                  },
+                  {
+                    "id": 5,
+                    "type": "debit",
+                    "email": "alan@gmail.com",
+                    "amount": 455,
+                    "description": "Wifi Bill",
+                    "date": "2024-03-13"
+                  },
+                  {
+                    "id": 6,
+                    "type": "debit",
+                    "email": "alice@gmail.com",
+                    "amount": 65,
+                    "description": "Grocery",
+                    "date": "2024-03-13"
+                  },
+                  {
+                    "id": 7,
+                    "type": "debit",
+                    "email": "amal@gmail.com",
+                    "amount": 235,
+                    "description": "Netflix Subscription",
+                    "date": "2024-03-13"
+                  },
+                  {
+                    "id": 8,
+                    "type": "debit",
+                    "email": "bob@gmail.com",
+                    "amount": 235,
+                    "description": "Netflix Subscription",
+                    "date": "2024-03-13"
+                  },
+                  {
+                    "id": 9,
+                    "type": "debit",
+                    "email": "bob@gmail.com",
+                    "amount": 20,
+                    "description": "Grocery",
+                    "date": "2024-03-13"
+                  },
+                  {
+                    "id": 10,
+                    "type": "credit",
+                    "email": "bob@gmail.com",
+                    "amount": 200,
+                    "description": "Cashback",
+                    "date": "2024-03-15"
+                  },
+                  {
+                    "id": 11,
+                    "type": "credit",
+                    "email": "bob@gmail.com",
+                    "amount": 500,
+                    "description": "Reward Point",
+                    "date": "2024-03-15"
+                  }
+                ]
+              },
+              "recentTransactions": [
+                {
+                  "type": "debit",
+                  "email": "alice@gmail.com",
+                  "amount": 2000,
+                  "description": "Transfer to bob@gmail.com: Money Transfer",
+                  "date": "2024-11-02T13:36:22.730Z",
+                  "id": 13
+                },
+                {
+                  "type": "credit",
+                  "email": "alice@gmail.com",
+                  "amount": 2000,
+                  "description": "Received from bob@gmail.com: Money Transfer",
+                  "date": "2024-11-02T13:35:28.219Z",
+                  "id": 12
+                },
+                {
+                  "id": 1,
+                  "type": "credit",
+                  "email": "amal@gmail.com",
+                  "amount": 2500,
+                  "description": "Salary Deposit",
+                  "date": "2024-03-15"
+                },
+                {
+                  "id": 2,
+                  "type": "debit",
+                  "email": "alice@gmail.com",
+                  "amount": 150,
+                  "description": "Grocery Store",
+                  "date": "2024-03-14"
+                },
+                {
+                  "id": 3,
+                  "type": "debit",
+                  "email": "alan@gmail.com",
+                  "amount": 235,
+                  "description": "Netflix Subscription",
+                  "date": "2024-03-13"
+                },
+                {
+                  "id": 4,
+                  "type": "debit",
+                  "email": "bob@gmail.com",
+                  "amount": 85,
+                  "description": "Electric Bill",
+                  "date": "2024-03-12"
+                },
+                {
+                  "id": 5,
+                  "type": "debit",
+                  "email": "alan@gmail.com",
+                  "amount": 455,
+                  "description": "Wifi Bill",
+                  "date": "2024-03-13"
+                },
+                {
+                  "id": 6,
+                  "type": "debit",
+                  "email": "alice@gmail.com",
+                  "amount": 65,
+                  "description": "Grocery",
+                  "date": "2024-03-13"
+                },
+                {
+                  "id": 7,
+                  "type": "debit",
+                  "email": "amal@gmail.com",
+                  "amount": 235,
+                  "description": "Netflix Subscription",
+                  "date": "2024-03-13"
+                },
+                {
+                  "id": 8,
+                  "type": "debit",
+                  "email": "bob@gmail.com",
+                  "amount": 235,
+                  "description": "Netflix Subscription",
+                  "date": "2024-03-13"
+                },
+                {
+                  "id": 9,
+                  "type": "debit",
+                  "email": "bob@gmail.com",
+                  "amount": 20,
+                  "description": "Grocery",
+                  "date": "2024-03-13"
+                },
+                {
+                  "id": 10,
+                  "type": "credit",
+                  "email": "bob@gmail.com",
+                  "amount": 200,
+                  "description": "Cashback",
+                  "date": "2024-03-15"
+                },
+                {
+                  "id": 11,
+                  "type": "credit",
+                  "email": "bob@gmail.com",
+                  "amount": 500,
+                  "description": "Reward Point",
+                  "date": "2024-03-15"
+                }
+              ]
+            },
+            "recentTransactions": [
+              {
+                "type": "credit",
+                "email": "bob@gmail.com",
+                "amount": 2000,
+                "description": "Received from alice@gmail.com: Money Transfer",
+                "date": "2024-11-02T13:36:22.730Z",
+                "id": 13
+              },
+              {
+                "type": "credit",
+                "email": "alice@gmail.com",
+                "amount": 2000,
+                "description": "Received from bob@gmail.com: Money Transfer",
+                "date": "2024-11-02T13:35:28.219Z",
+                "id": 12
+              },
+              {
+                "id": 1,
+                "type": "credit",
+                "email": "amal@gmail.com",
+                "amount": 2500,
+                "description": "Salary Deposit",
+                "date": "2024-03-15"
+              },
+              {
+                "id": 2,
+                "type": "debit",
+                "email": "alice@gmail.com",
+                "amount": 150,
+                "description": "Grocery Store",
+                "date": "2024-03-14"
+              },
+              {
+                "id": 3,
+                "type": "debit",
+                "email": "alan@gmail.com",
+                "amount": 235,
+                "description": "Netflix Subscription",
+                "date": "2024-03-13"
+              },
+              {
+                "id": 4,
+                "type": "debit",
+                "email": "bob@gmail.com",
+                "amount": 85,
+                "description": "Electric Bill",
+                "date": "2024-03-12"
+              },
+              {
+                "id": 5,
+                "type": "debit",
+                "email": "alan@gmail.com",
+                "amount": 455,
+                "description": "Wifi Bill",
+                "date": "2024-03-13"
+              },
+              {
+                "id": 6,
+                "type": "debit",
+                "email": "alice@gmail.com",
+                "amount": 65,
+                "description": "Grocery",
+                "date": "2024-03-13"
+              },
+              {
+                "id": 7,
+                "type": "debit",
+                "email": "amal@gmail.com",
+                "amount": 235,
+                "description": "Netflix Subscription",
+                "date": "2024-03-13"
+              },
+              {
+                "id": 8,
+                "type": "debit",
+                "email": "bob@gmail.com",
+                "amount": 235,
+                "description": "Netflix Subscription",
+                "date": "2024-03-13"
+              },
+              {
+                "id": 9,
+                "type": "debit",
+                "email": "bob@gmail.com",
+                "amount": 20,
+                "description": "Grocery",
+                "date": "2024-03-13"
+              },
+              {
+                "id": 10,
+                "type": "credit",
+                "email": "bob@gmail.com",
+                "amount": 200,
+                "description": "Cashback",
+                "date": "2024-03-15"
+              },
+              {
+                "id": 11,
+                "type": "credit",
+                "email": "bob@gmail.com",
+                "amount": 500,
+                "description": "Reward Point",
+                "date": "2024-03-15"
+              }
+            ]
+          },
+          "recentTransactions": [
+            {
+              "type": "debit",
+              "email": "bob@gmail.com",
+              "amount": 2000,
+              "description": "Transfer to alice@gmail.com: Money Transfer",
+              "date": "2024-11-02T13:38:40.416Z",
+              "id": 14
+            },
+            {
+              "type": "credit",
+              "email": "bob@gmail.com",
+              "amount": 2000,
+              "description": "Received from alice@gmail.com: Money Transfer",
+              "date": "2024-11-02T13:36:22.730Z",
+              "id": 13
+            },
+            {
+              "type": "credit",
+              "email": "alice@gmail.com",
+              "amount": 2000,
+              "description": "Received from bob@gmail.com: Money Transfer",
+              "date": "2024-11-02T13:35:28.219Z",
+              "id": 12
+            },
+            {
+              "id": 1,
+              "type": "credit",
+              "email": "amal@gmail.com",
+              "amount": 2500,
+              "description": "Salary Deposit",
+              "date": "2024-03-15"
+            },
+            {
+              "id": 2,
+              "type": "debit",
+              "email": "alice@gmail.com",
+              "amount": 150,
+              "description": "Grocery Store",
+              "date": "2024-03-14"
+            },
+            {
+              "id": 3,
+              "type": "debit",
+              "email": "alan@gmail.com",
+              "amount": 235,
+              "description": "Netflix Subscription",
+              "date": "2024-03-13"
+            },
+            {
+              "id": 4,
+              "type": "debit",
+              "email": "bob@gmail.com",
+              "amount": 85,
+              "description": "Electric Bill",
+              "date": "2024-03-12"
+            },
+            {
+              "id": 5,
+              "type": "debit",
+              "email": "alan@gmail.com",
+              "amount": 455,
+              "description": "Wifi Bill",
+              "date": "2024-03-13"
+            },
+            {
+              "id": 6,
+              "type": "debit",
+              "email": "alice@gmail.com",
+              "amount": 65,
+              "description": "Grocery",
+              "date": "2024-03-13"
+            },
+            {
+              "id": 7,
+              "type": "debit",
+              "email": "amal@gmail.com",
+              "amount": 235,
+              "description": "Netflix Subscription",
+              "date": "2024-03-13"
+            },
+            {
+              "id": 8,
+              "type": "debit",
+              "email": "bob@gmail.com",
+              "amount": 235,
+              "description": "Netflix Subscription",
+              "date": "2024-03-13"
+            },
+            {
+              "id": 9,
+              "type": "debit",
+              "email": "bob@gmail.com",
+              "amount": 20,
+              "description": "Grocery",
+              "date": "2024-03-13"
+            },
+            {
+              "id": 10,
+              "type": "credit",
+              "email": "bob@gmail.com",
+              "amount": 200,
+              "description": "Cashback",
+              "date": "2024-03-15"
+            },
+            {
+              "id": 11,
+              "type": "credit",
+              "email": "bob@gmail.com",
+              "amount": 500,
+              "description": "Reward Point",
+              "date": "2024-03-15"
+            }
+          ]
+        },
+        "recentTransactions": [
+          {
+            "type": "credit",
+            "email": "alice@gmail.com",
+            "amount": 2000,
+            "description": "Received from bob@gmail.com: Money Transfer",
+            "date": "2024-11-02T13:38:40.416Z",
+            "id": 14
+          },
+          {
+            "type": "credit",
+            "email": "bob@gmail.com",
+            "amount": 2000,
+            "description": "Received from alice@gmail.com: Money Transfer",
+            "date": "2024-11-02T13:36:22.730Z",
+            "id": 13
+          },
+          {
+            "type": "credit",
+            "email": "alice@gmail.com",
+            "amount": 2000,
+            "description": "Received from bob@gmail.com: Money Transfer",
+            "date": "2024-11-02T13:35:28.219Z",
+            "id": 12
+          },
+          {
+            "id": 1,
+            "type": "credit",
+            "email": "amal@gmail.com",
+            "amount": 2500,
+            "description": "Salary Deposit",
+            "date": "2024-03-15"
+          },
+          {
+            "id": 2,
+            "type": "debit",
+            "email": "alice@gmail.com",
+            "amount": 150,
+            "description": "Grocery Store",
+            "date": "2024-03-14"
+          },
+          {
+            "id": 3,
+            "type": "debit",
+            "email": "alan@gmail.com",
+            "amount": 235,
+            "description": "Netflix Subscription",
+            "date": "2024-03-13"
+          },
+          {
+            "id": 4,
+            "type": "debit",
+            "email": "bob@gmail.com",
+            "amount": 85,
+            "description": "Electric Bill",
+            "date": "2024-03-12"
+          },
+          {
+            "id": 5,
+            "type": "debit",
+            "email": "alan@gmail.com",
+            "amount": 455,
+            "description": "Wifi Bill",
+            "date": "2024-03-13"
+          },
+          {
+            "id": 6,
+            "type": "debit",
+            "email": "alice@gmail.com",
+            "amount": 65,
+            "description": "Grocery",
+            "date": "2024-03-13"
+          },
+          {
+            "id": 7,
+            "type": "debit",
+            "email": "amal@gmail.com",
+            "amount": 235,
+            "description": "Netflix Subscription",
+            "date": "2024-03-13"
+          },
+          {
+            "id": 8,
+            "type": "debit",
+            "email": "bob@gmail.com",
+            "amount": 235,
+            "description": "Netflix Subscription",
+            "date": "2024-03-13"
+          },
+          {
+            "id": 9,
+            "type": "debit",
+            "email": "bob@gmail.com",
+            "amount": 20,
+            "description": "Grocery",
+            "date": "2024-03-13"
+          },
+          {
+            "id": 10,
+            "type": "credit",
+            "email": "bob@gmail.com",
+            "amount": 200,
+            "description": "Cashback",
+            "date": "2024-03-15"
+          },
+          {
+            "id": 11,
+            "type": "credit",
+            "email": "bob@gmail.com",
+            "amount": 500,
+            "description": "Reward Point",
+            "date": "2024-03-15"
+          }
+        ]
+      },
+      "recentTransactions": [
+        {
+          "type": "debit",
+          "email": "alice@gmail.com",
+          "amount": 2000,
+          "description": "Transfer to bob@gmail.com: Money Transfer",
+          "date": "2024-11-02T13:39:24.562Z",
+          "id": 15
+        },
+        {
+          "type": "credit",
+          "email": "alice@gmail.com",
+          "amount": 2000,
+          "description": "Received from bob@gmail.com: Money Transfer",
+          "date": "2024-11-02T13:38:40.416Z",
+          "id": 14
+        },
+        {
+          "type": "credit",
+          "email": "bob@gmail.com",
+          "amount": 2000,
+          "description": "Received from alice@gmail.com: Money Transfer",
+          "date": "2024-11-02T13:36:22.730Z",
+          "id": 13
+        },
+        {
+          "type": "credit",
+          "email": "alice@gmail.com",
+          "amount": 2000,
+          "description": "Received from bob@gmail.com: Money Transfer",
+          "date": "2024-11-02T13:35:28.219Z",
+          "id": 12
+        },
+        {
+          "id": 1,
+          "type": "credit",
+          "email": "amal@gmail.com",
+          "amount": 2500,
+          "description": "Salary Deposit",
+          "date": "2024-03-15"
+        },
+        {
+          "id": 2,
+          "type": "debit",
+          "email": "alice@gmail.com",
+          "amount": 150,
+          "description": "Grocery Store",
+          "date": "2024-03-14"
+        },
+        {
+          "id": 3,
+          "type": "debit",
+          "email": "alan@gmail.com",
+          "amount": 235,
+          "description": "Netflix Subscription",
+          "date": "2024-03-13"
+        },
+        {
+          "id": 4,
+          "type": "debit",
+          "email": "bob@gmail.com",
+          "amount": 85,
+          "description": "Electric Bill",
+          "date": "2024-03-12"
+        },
+        {
+          "id": 5,
+          "type": "debit",
+          "email": "alan@gmail.com",
+          "amount": 455,
+          "description": "Wifi Bill",
+          "date": "2024-03-13"
+        },
+        {
+          "id": 6,
+          "type": "debit",
+          "email": "alice@gmail.com",
+          "amount": 65,
+          "description": "Grocery",
+          "date": "2024-03-13"
+        },
+        {
+          "id": 7,
+          "type": "debit",
+          "email": "amal@gmail.com",
+          "amount": 235,
+          "description": "Netflix Subscription",
+          "date": "2024-03-13"
+        },
+        {
+          "id": 8,
+          "type": "debit",
+          "email": "bob@gmail.com",
+          "amount": 235,
+          "description": "Netflix Subscription",
+          "date": "2024-03-13"
+        },
+        {
+          "id": 9,
+          "type": "debit",
+          "email": "bob@gmail.com",
+          "amount": 20,
+          "description": "Grocery",
+          "date": "2024-03-13"
+        },
+        {
+          "id": 10,
+          "type": "credit",
+          "email": "bob@gmail.com",
+          "amount": 200,
+          "description": "Cashback",
+          "date": "2024-03-15"
+        },
+        {
+          "id": 11,
+          "type": "credit",
+          "email": "bob@gmail.com",
+          "amount": 500,
+          "description": "Reward Point",
+          "date": "2024-03-15"
+        }
+      ]
+    },
+    "recentTransactions": [
+      {
+        "type": "credit",
+        "email": "bob@gmail.com",
+        "amount": 2000,
+        "description": "Received from alice@gmail.com: Money Transfer",
+        "date": "2024-11-02T13:39:24.562Z",
+        "id": 15
+      },
+      {
+        "type": "credit",
+        "email": "alice@gmail.com",
+        "amount": 2000,
+        "description": "Received from bob@gmail.com: Money Transfer",
+        "date": "2024-11-02T13:38:40.416Z",
+        "id": 14
+      },
+      {
+        "type": "credit",
+        "email": "bob@gmail.com",
+        "amount": 2000,
+        "description": "Received from alice@gmail.com: Money Transfer",
+        "date": "2024-11-02T13:36:22.730Z",
+        "id": 13
+      },
+      {
+        "type": "credit",
+        "email": "alice@gmail.com",
+        "amount": 2000,
+        "description": "Received from bob@gmail.com: Money Transfer",
+        "date": "2024-11-02T13:35:28.219Z",
+        "id": 12
+      },
+      {
+        "id": 1,
+        "type": "credit",
+        "email": "amal@gmail.com",
+        "amount": 2500,
+        "description": "Salary Deposit",
+        "date": "2024-03-15"
+      },
+      {
+        "id": 2,
+        "type": "debit",
+        "email": "alice@gmail.com",
+        "amount": 150,
+        "description": "Grocery Store",
+        "date": "2024-03-14"
+      },
+      {
+        "id": 3,
+        "type": "debit",
+        "email": "alan@gmail.com",
+        "amount": 235,
+        "description": "Netflix Subscription",
+        "date": "2024-03-13"
+      },
+      {
+        "id": 4,
+        "type": "debit",
+        "email": "bob@gmail.com",
+        "amount": 85,
+        "description": "Electric Bill",
+        "date": "2024-03-12"
+      },
+      {
+        "id": 5,
+        "type": "debit",
+        "email": "alan@gmail.com",
+        "amount": 455,
+        "description": "Wifi Bill",
+        "date": "2024-03-13"
+      },
+      {
+        "id": 6,
+        "type": "debit",
+        "email": "alice@gmail.com",
+        "amount": 65,
+        "description": "Grocery",
+        "date": "2024-03-13"
+      },
+      {
+        "id": 7,
+        "type": "debit",
+        "email": "amal@gmail.com",
+        "amount": 235,
+        "description": "Netflix Subscription",
+        "date": "2024-03-13"
+      },
+      {
+        "id": 8,
+        "type": "debit",
+        "email": "bob@gmail.com",
+        "amount": 235,
+        "description": "Netflix Subscription",
+        "date": "2024-03-13"
+      },
+      {
+        "id": 9,
+        "type": "debit",
+        "email": "bob@gmail.com",
+        "amount": 20,
+        "description": "Grocery",
+        "date": "2024-03-13"
+      },
+      {
+        "id": 10,
+        "type": "credit",
+        "email": "bob@gmail.com",
+        "amount": 200,
+        "description": "Cashback",
+        "date": "2024-03-15"
+      },
+      {
+        "id": 11,
+        "type": "credit",
+        "email": "bob@gmail.com",
+        "amount": 500,
+        "description": "Reward Point",
+        "date": "2024-03-15"
+      }
+    ]
+  }
+}

@@ -1,0 +1,52 @@
+
+<div class="login-container">
+    <mat-card class="login-card">
+      <mat-card-header>
+        <mat-card-title>
+          <h2>Welcome Back!</h2>
+          <p>Please log in to continue</p>
+        </mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <form (ngSubmit)="login()" [formGroup]="loginForm">
+          <mat-form-field appearance="outline" class="full-width">
+            <mat-label>Email</mat-label>
+            <input matInput formControlName="email" type="email" />
+            @if(loginForm.controls['email'].hasError('required')){
+                <mat-error>
+                    Email is required
+                </mat-error>
+            }
+            @if(loginForm.controls['email'].hasError('email')){
+                <mat-error>
+                    Enter a valid email
+                </mat-error>
+            }
+         </mat-form-field>
+  
+          <mat-form-field appearance="outline" class="full-width">
+            <mat-label>Password</mat-label>
+            <input matInput formControlName="password" type="password" />
+            @if(loginForm.controls['password'].hasError('required')){
+                <mat-error>
+                    Password is required
+                </mat-error>
+            }
+            @if(loginForm.controls['password'].hasError('minlength')){
+                <mat-error>
+                    Password must atleast be 6 characters.
+                </mat-error>
+            }
+          </mat-form-field>
+  
+          <button mat-raised-button color="primary" type="submit" class="login-button" [disabled]="loginForm.invalid || isLoading ">
+            {{ isLoading ? 'Loggin in..': 'Login' }}
+          </button>
+        </form>
+      </mat-card-content>
+      <mat-card-actions>
+        <p>Don’t have an account? <a routerLink="/register">Sign up</a></p>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+  

@@ -1,0 +1,91 @@
+
+<div class="dashboard-container">
+  <div class="header">
+    @if(currentUser){
+      <div class="welcome-section">
+        <h1>Welcome back,</h1>
+        <h2 class="user-name">{{currentUser.name}}!</h2>
+      </div>
+    }
+    <button mat-raised-button color="warn" (click)="logout()" class="logout-button">
+      <mat-icon>logout</mat-icon>
+      <span>Logout</span>
+    </button>
+  </div>
+
+  <!-- Balance Cards -->
+  <div class="balance-cards">
+    <mat-card class="balance-card main-balance">
+      <div class="card-content">
+        <div class="icon-container">
+          <mat-icon>account_balance_wallet</mat-icon>
+        </div>
+        <div class="card-details">
+          <h3>Total Balance</h3>
+          <div class="amount">$ {{totalBalance.toFixed(2)}}</div>
+        </div>
+      </div>
+    </mat-card>
+    
+    <mat-card class="balance-card income">
+      <div class="card-content">
+        <div class="icon-container">
+          <mat-icon>trending_up</mat-icon>
+        </div>
+        <div class="card-details">
+          <h3>Monthly Income</h3>
+          <div class="amount credit">$ {{monthlyIncome.toFixed(2)}}</div>
+        </div>
+      </div>
+    </mat-card>
+    
+    <mat-card class="balance-card expenses">
+      <div class="card-content">
+        <div class="icon-container">
+          <mat-icon>trending_down</mat-icon>
+        </div>
+        <div class="card-details">
+          <h3>Monthly Expenses</h3>
+          <div class="amount debit">$ {{monthlyExpenses.toFixed(2)}}</div>
+        </div>
+      </div>
+    </mat-card>
+  </div>
+
+<!-- Send Money Section -->
+<div class="dashboard-section">
+  <app-send></app-send>
+  
+  <!-- Recent Transactions (existing code) -->
+  <mat-card class="transactions-card">
+    <!-- ... existing transaction list code ... -->
+  </mat-card>
+</div>
+
+  <!-- Recent Transactions -->
+  <mat-card class="transactions-card">
+    <mat-card-header>
+      <mat-card-title>Recent Transactions</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <div class="transactions-list">
+        @for(transaction of recentTransactions; track transaction.id) {
+          <div class="transaction-item" [class]="transaction.type">
+            <div class="transaction-icon">
+              <mat-icon>
+                {{transaction.type === 'credit' ? 'arrow_upward' : 'arrow_downward'}}
+              </mat-icon>
+            </div>
+            <div class="transaction-info">
+              <span class="transaction-description">{{transaction.description}}</span>
+              <span class="transaction-date">{{transaction.date | date:'mediumDate'}}</span>
+            </div>
+            <span class="amount" [class]="transaction.type">
+              {{transaction.type === 'credit' ? '+' : '-'}} ${{transaction.amount.toFixed(2)}}
+            </span>
+          </div>
+        }
+      </div>
+    </mat-card-content>
+  </mat-card>
+</div>

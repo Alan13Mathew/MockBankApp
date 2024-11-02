@@ -1,0 +1,43 @@
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>Send Money</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <form [formGroup]="sendMoneyForm" (ngSubmit)="onSubmit()">
+      <mat-form-field appearance="outline" class="w-full">
+        <mat-label>Recipient Email</mat-label>
+        <input matInput formControlName="recipientEmail" type="email" required>
+        <mat-error *ngIf="sendMoneyForm.get('recipientEmail')?.errors?.['required']">
+          Email is required
+        </mat-error>
+        <mat-error *ngIf="sendMoneyForm.get('recipientEmail')?.errors?.['email']">
+          Please enter a valid email
+        </mat-error>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline" class="w-full">
+        <mat-label>Amount</mat-label>
+        <input matInput formControlName="amount" type="number" min="1" required>
+        <mat-error *ngIf="sendMoneyForm.get('amount')?.errors?.['required']">
+          Amount is required
+        </mat-error>
+        <mat-error *ngIf="sendMoneyForm.get('amount')?.errors?.['min']">
+          Amount must be greater than 0
+        </mat-error>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline" class="w-full">
+        <mat-label>Description (Optional)</mat-label>
+        <textarea matInput formControlName="description" rows="2"></textarea>
+      </mat-form-field>
+
+      <button mat-raised-button color="primary" 
+              [disabled]="sendMoneyForm.invalid || isTransactionInProgress"
+              class="w-full">
+        <mat-icon *ngIf="!isTransactionInProgress">send</mat-icon>
+        <mat-icon *ngIf="isTransactionInProgress" class="animate-spin">sync</mat-icon>
+        {{ isTransactionInProgress ? 'Processing...' : 'Send Money' }}
+      </button>
+    </form>
+  </mat-card-content>
+</mat-card>

@@ -1,0 +1,30 @@
+<div class="receive-money-container">
+    <h2>Receive Money</h2>
+    <form [formGroup]="receiveForm" (ngSubmit)="onReceiveMoney()">
+      <mat-form-field appearance="outline">
+        <mat-label>Sender Name</mat-label>
+        <input matInput formControlName="senderName" />
+        @if(receiveForm.get('senderName')?.hasError('required')){
+            <mat-error>
+                Sender name is required
+              </mat-error>
+        }
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Amount (₹)</mat-label>
+        <input matInput type="number" formControlName="amount" />
+        <mat-error *ngIf="receiveForm.get('amount')?.hasError('required')">
+          Amount is required
+        </mat-error>
+        <mat-error *ngIf="receiveForm.get('amount')?.hasError('min')">
+          Amount must be at least ₹1
+        </mat-error>
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Reference Note</mat-label>
+        <input matInput formControlName="reference" />
+      </mat-form-field>
+      <button mat-raised-button color="primary" type="submit">Receive Money</button>
+    </form>
+  </div>
+  
