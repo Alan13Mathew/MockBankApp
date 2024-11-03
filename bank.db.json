@@ -10,7 +10,7 @@
     {
       "id": "2",
       "name": "Bob",
-      "balance": 2200,
+      "balance": 2000,
       "email": "bob@gmail.com",
       "password": "bob@123"
     },
@@ -24,13 +24,45 @@
     {
       "id": "4",
       "name": "Alan",
-      "balance": 1580,
+      "balance": 1780,
       "email": "alan@gmail.com",
       "password": "alan@123"
     }
   ],
   "transactions": {
     "recentTransactions": [
+      {
+        "type": "debit",
+        "email": "bob@gmail.com",
+        "amount": 415.23,
+        "description": "Transfer to alan@gmail.com: Money Transfer",
+        "date": "2024-11-03T07:11:24.060Z",
+        "id": 26
+      },
+      {
+        "type": "credit",
+        "email": "alan@gmail.com",
+        "amount": 415.23,
+        "description": "Received from bob@gmail.com: Money Transfer",
+        "date": "2024-11-03T07:11:24.060Z",
+        "id": 27
+      },
+      {
+        "type": "debit",
+        "email": "alan@gmail.com",
+        "amount": 215.23,
+        "description": "Transfer to bob@gmail.com: Money Transfer",
+        "date": "2024-11-03T07:10:02.536Z",
+        "id": 24
+      },
+      {
+        "type": "credit",
+        "email": "bob@gmail.com",
+        "amount": 215.23,
+        "description": "Received from alan@gmail.com: Money Transfer",
+        "date": "2024-11-03T07:10:02.536Z",
+        "id": 25
+      },
       {
         "type": "debit",
         "email": "alice@gmail.com",
