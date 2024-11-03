@@ -1,6 +1,7 @@
 # BankApp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.10.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.10. This project is a practice project for me to get familiarity with most of the concepts in angular.
+For the time being i have only made existing users in the json-server to have access to the pages. 
 
 
 
@@ -12,6 +13,7 @@ https://github.com/user-attachments/assets/127677e1-1502-4ef5-a918-1b5e8278b75c
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Run `json-server --watch bank.db.json` (install json-server)
 
 ## Code scaffolding
 
